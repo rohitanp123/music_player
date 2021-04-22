@@ -6,6 +6,7 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { Easing } from 'react-native-reanimated';
 import HomeScreen from "../screens/homeScreen";
+import DescriptionScreen from '../screens/descriptionScreen';
 
 const HomeStackNavigator = createStackNavigator();
 const config = {
@@ -55,6 +56,10 @@ export default ProfileScreenStack = (props) => {
                 <HomeStackNavigator.Screen
                     name="Home"
                     component={HomeScreen}
+                />
+                <HomeStackNavigator.Screen
+                    name="Desc"
+                    component={DescriptionScreen}
                 />
 
             </HomeStackNavigator.Navigator>
